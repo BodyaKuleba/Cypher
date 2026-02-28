@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection{
+    background-color: aliceblue;
+}
+.wrap{
+    width: 100%;
+    min-height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cypherDiv{
+    width: 50%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.decypherDiv{
+    width: 50%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+textarea{
+    width: 400px;
+    height: 600px;
+    padding: 50px;
+    font-size: 40px;
+    font-family: Tangerine;
+    font-weight: 600;
+    resize: none;
+    background-color: aliceblue;
+    color: rgb(26, 44, 69);
+    outline: none;
+    border: none;
+    background-position: center;
+    scroll-padding: 50px;
+    overflow-y: hidden;
+    background-size: cover;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8bdec6bc-0ef4-4d9c-bf67-5fdaaea0b446/d48ubt0-56b4bc61-7abe-4c87-a333-7e51702f8821.png/v1/fill/w_900,h_1284/old_paper_stock_02_by_ftourini_d48ubt0-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4NCIsInBhdGgiOiIvZi84YmRlYzZiYy0wZWY0LTRkOWMtYmY2Ny01ZmRhYWVhMGI0NDYvZDQ4dWJ0MC01NmI0YmM2MS03YWJlLTRjODctYTMzMy03ZTUxNzAyZjg4MjEucG5nIiwid2lkdGgiOiI8PTkwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.NGSD4y2CGa1jZGWv5oTL3ztJeqhOJc1yOAu6Ve3Deuw");
+}
+button{
+    width: 100px;
+    height: 60px;
+    font-family: Tangerine;
+    font-size: 30px;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: aliceblue;
+    color: rgb(26, 44, 69);
+    outline: none;
+    border: none;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://img.freepik.com/free-photo/wooden-sign_1160-827.jpg?semt=ais_incoming&w=740&q=80");
+    filter: brightness(1);
+    transition: 0.2s;
+}
+.caesar{
+    position: fixed;
+    top: 50%;
+    left: -90px;
+    width: 190px;
+    transform: rotateZ(20deg);
+    height: 300px;
+    transition: 0.5s;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Julius_Caesar_Coustou_Louvre.png/960px-Julius_Caesar_Coustou_Louvre.png);
+}
+.caesar:hover{
+    filter: brightness(1.5);
+    transform: rotateZ(30deg);
+}
+button:hover{
+    transform: translateY(-3px);
+    filter: brightness(1.5);
+}
+button:active{
+    transform: translateY(3px) rotateX(20deg);
+    filter: brightness(1.2);
+}
+select{
+    text-align: center;
+    outline: none;
+    border: none;
+    background-color: aliceblue;
+    font-family: Bonheur Royale;
+    color: rgb(26, 44, 69);
+    font-weight: 900;
+    width: 300px;
+    transition: 0.2s;
+    height: 150px;
+    font-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/045/687/127/small_2x/rough-hewn-wooden-plank-silhouettes-free-png.png");
+}
+select:hover{
+  filter: saturate(2);
+  color: azure;
+}
+option{
+  background-color: #564933;
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 900px) {
+    .wrap{
+        flex-direction: column;
+    }
+    .cypherDiv{
+        width: 100%;
+    }
+    .decypherDiv{
+        width: 100%;
+    }
+}
